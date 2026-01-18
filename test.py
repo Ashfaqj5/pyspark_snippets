@@ -53,7 +53,7 @@ df_shock_clean = spark.createDataFrame(
 )
 
 df_shock_clean.show()
-NUM_VARIABLES = 5   # total RFs per DV
+NUM_VARIABLES = 3   # total RFs per DV
 
 dv_df  = df_shock_clean.filter(F.col("is_mlr") == 1)
 idv_df = df_shock_clean.filter(F.col("is_mlr") == 0)
